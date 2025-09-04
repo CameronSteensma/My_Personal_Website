@@ -91,14 +91,14 @@ function App() {
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gray-100">
-        <div className="mx-auto px-6 flex flex-col space-y-12" style={{ maxWidth: '1000px' }}>
+        <div className="mx-auto px-6 flex flex-col space-y-12" style={{ maxWidth: '1100px' }}>
           <h2 className="text-3xl md:text-4xl font-bold text-center">My Projects</h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
             {/* Project 1 */}
             <div className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-3xl shadow-lg p-10 flex flex-col justify-between hover:shadow-2xl hover:scale-105 hover:border-blue-400 transition-transform transition-shadow duration-300">
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
                 <FileCode2 className='w-5 h-5' /> Finance Tracker</h3>
-              <p className="text-gray-700 mt-2 leading-relaxed max-w-prose">
+              <p className="text-gray-700 mt-2 leading-relaxed max-w-prose text-left px-2">
                 A full-stack personal finance tracker built with Django, React, and PostgreSQL.
                 Features category-based spending charts and reporting.
               </p>
@@ -112,7 +112,7 @@ function App() {
             <div className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-3xl shadow-lg p-10 flex flex-col justify-between hover:shadow-2xl hover:scale-105 hover:border-purple-400 transition-transform transition-shadow duration-300">
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
                 <FileCode2 className='w-5 h-5' /> TO-DO App</h3>
-              <p className="text-gray-600 mt-2 leading-relaxed max-w-prose">
+              <p className="text-gray-600 mt-2 leading-relaxed max-w-prose px-2">
                 To-do list full-stack application made from Node.js, JavaScript, and HTML.
                 Services used include: Express Server, MongoDB Storage and persistence, Bootstrap for styling.
               </p>
@@ -124,7 +124,7 @@ function App() {
             <div className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-3xl shadow-lg p-10 flex flex-col justify-between hover:shadow-2xl hover:scale-105 hover:border-purple-400 transition-transform transition-shadow duration-300">
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
                 <FileCode2 className='w-5 h-5' /> LiveWallz App</h3>
-              <p className="text-gray-600 mt-2 leading-relaxed max-w-prose">
+              <p className="text-gray-600 mt-2 leading-relaxed max-w-prose px-2">
                 A highly interactive and configurable live wallpaper android application created with C++,
                 OpenGL, Kotlin, MySQL and Jetpack Compose utilizing OAuth2.0 authentication.
               </p>
@@ -142,42 +142,48 @@ function App() {
       </div>
 
       {/* Call To Action */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-blue-700 to-purple-700 text-white">
-        <div className="max-w-4xl mx-auto text-center px-6 flex flex-col items-center space-y-6">
+      <section id="contact" className="py-32 bg-gradient-to-r from-blue-700 to-purple-700 text-white">
+        <div className="max-w-4xl mx-auto text-center px-6 flex flex-col items-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-600">Let’s Connect</h2>
           <p className="text-white/90 text-lg md:text-xl max-w-prose">Interested in working together or learning more? Reach out below.</p>
-          <a href="mailto:cameronsteensma@gmail.com" className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg shadow hover:bg-gray-100 hover:translate-y-1 hover:shadow-xl transition-transform transition-shadow duration-300">
+          <a href="mailto:cameronsteensma@gmail.com" className="px-10 py-6 bg-white text-blue-600 font-semibold rounded-full shadow-lg shadow hover:bg-gray-100 hover:translate-y-1 hover:shadow-xl transition-transform transition-shadow duration-300">
             <Mail className='w-5 h-5' /> Email Me
           </a>
         </div>
-      </section>
 
-      <div className="flex justify-center space-x-6 mt-8 mb-12">
+      <div className="flex justify-center items-center gap-6 mt-8 mb-12">
         <a
           href="https://github.com/CameronSteensma"
           target="_blank"
           rel="noreferrer"
-          className="text-white hover:text-yellow-400 transition-colors"
+          className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform transition-shadow duration-300"
         >
-          <Github className="w-6 h-6" />
+          <Github className="w-6 h-6" />Github
         </a>
         <a
           href="https://www.linkedin.com/in/cameron-steensma-406960176/"
           target="_blank"
           rel="noreferrer"
-          className="text-white hover:text-blue-400 transition-colors"
+          className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform transition-shadow duration-300"
         >
-          <User className="w-6 h-6" />
+          <User className="w-6 h-6" />LinkedIn
         </a>
         <a
           href="/CamResumeEngineer.pdf"
           target="_blank"
           rel="noreferrer"
-          className="text-white hover:text-green-400 transition-colors"
+          className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform transition-shadow duration-300"
         >
-          <FileCode2 className="w-6 h-6" />
+          <FileCode2 className="w-6 h-6" />Resume
         </a>
       </div>
+      </section>
+      {/* Footer */}
+      <footer className="py-12 bg-gray-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm">&copy; {new Date().getFullYear()} Cameron Steensma. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
