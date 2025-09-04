@@ -170,7 +170,7 @@ function App() {
           <User className="w-6 h-6" />
         </a>
         <a
-          href="/CamResumeEngineer.docx"
+          href="/CamResumeEngineer.pdf"
           target="_blank"
           rel="noreferrer"
           className="text-white hover:text-green-400 transition-colors"
