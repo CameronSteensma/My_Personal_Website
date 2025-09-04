@@ -64,8 +64,8 @@ function App() {
             <p className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-xl" style={{ maxWidth: '750px' }}>
               I’m Cameron, a software engineer passionate about building modern web apps,
               data-driven solutions, and scalable systems. I graduated from the University of Utah in 2024 with my Bachelors of Science in Computer Science.
-               I enjoy working with .NET MAUI, React, JavaScript, Python and cloud technologies 
-               to solve real-world problems.
+              I enjoy working with .NET MAUI, React, JavaScript, Python and cloud technologies
+              to solve real-world problems.
               If I'm not coming up with creative solutions I'm likely playing guitar or enjoying
               the beautiful nature of Utah!
               <span className="font-bold text-red-600"> Oh, and by the way, GO UTES!</span>
@@ -151,6 +151,33 @@ function App() {
           </a>
         </div>
       </section>
+
+      <div className="flex justify-center space-x-6 mt-8 mb-12">
+        <a
+          href="https://github.com/CameronSteensma"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white hover:text-yellow-400 transition-colors"
+        >
+          <Github className="w-6 h-6" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/cameron-steensma-406960176/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white hover:text-blue-400 transition-colors"
+        >
+          <User className="w-6 h-6" />
+        </a>
+        <a
+          href="/CamResumeEngineer.docx"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white hover:text-green-400 transition-colors"
+        >
+          <FileCode2 className="w-6 h-6" />
+        </a>
+      </div>
     </div>
   );
 }

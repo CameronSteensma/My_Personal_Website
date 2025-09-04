@@ -15,6 +15,11 @@ header {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.hover-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transform: translateY(-5px) scale(1.05);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
