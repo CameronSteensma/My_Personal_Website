@@ -1,6 +1,7 @@
 import './App.css'
 import utesLogo from '/src/assets/utes-logo.png'
 import jazzLogo from '/src/assets/jazz-logo.png'
+import patriotsLogo from '/src/assets/patriots-logo.png'
 import websiteProfileImage from '/src/assets/webSiteProfileImage.png'
 import { Mail, Github, FileCode2, Info, FolderOpen, User } from "lucide-react";
 import { Link } from "react-scroll";
@@ -63,12 +64,14 @@ function App() {
             </h2>
             <p className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-xl" style={{ maxWidth: '750px' }}>
               I’m Cameron, a software engineer passionate about building modern web apps,
-              data-driven solutions, and scalable systems. I graduated from the University of Utah in 2024 with my Bachelors of Science in Computer Science.
+              data-driven solutions, and scalable systems. I graduated from the University of Utah in 2024 with my Bachelors of Science in Computer Science
+              along with a track in Software Development.
+              I have more than 3 years of professional experience in software development and engineering with over 2 years being a QA engineer.
               I enjoy working with .NET MAUI, React, JavaScript, Python and cloud technologies
               to solve real-world problems.
               If I'm not coming up with creative solutions I'm likely playing guitar or enjoying
               the beautiful nature of Utah!
-              <span className="font-bold text-red-600"> Oh, and by the way, GO UTES!</span>
+              <span className="font-extrabold"> Oh, and by the way, GO UTES!</span>
             </p>
             {/* Logos */}
             <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
@@ -79,6 +82,10 @@ function App() {
               <div className="flex items-center space-x-2">
                 <img src={jazzLogo} alt="Utah Jazz Logo" className="w-10 h-10 object-contain" />
                 <span className="text-lg font-semibold text-purple-600">GO JAZZ!</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <img src={patriotsLogo} alt="New England Patriots Logo" className="w-10 h-10 object-contain" />
+                <span className="text-lg font-semibold text-blue-600">GO PATRIOTS!</span>
               </div>
             </div>
           </div>
