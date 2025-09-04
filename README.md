@@ -1,12 +1,41 @@
-# React + Vite
+# Cameron Steensma - Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the personal website of **Cameron Lewis Steensma**, showcasing projects, skills, and ways to get in touch. Built with **React**, **Vite**, **Tailwind CSS**, and modern web technologies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, Tailwind CSS, JavaScript (ES6+)
+- **Bundler / Dev Tooling:** Vite
+- **Icons & Graphics:** Lucide React icons, custom SVGs
+- **Hosting:** Add your hosting info if deployed
+- **Version Control:** Git, GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+├─ public/ # Static assets (favicon, logos, etc.)
+├─ src/
+│ ├─ assets/ # Images, logos, icons
+│ ├─ components/ # Optional: reusable UI components
+│ ├─ App.jsx # Main App component
+│ └─ main.jsx # Entry point
+├─ package.json
+├─ tailwind.config.js
+└─ vite.config.js
+
+
+---
+
+## 🚀 Features
+
+- Responsive design optimized for desktop and mobile
+- Smooth scroll navigation
+- Animated banner with gradient background
+- Project showcase with links to GitHub repos
+- Contact section with a direct email link
+- Professional favicon with custom initials
+
+---
