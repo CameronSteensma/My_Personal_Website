@@ -4,9 +4,20 @@ import utesLogo from '/src/assets/utes-logo.png'
 import jazzLogo from '/src/assets/jazz-logo.png'
 import patriotsLogo from '/src/assets/patriots-logo.png'
 import websiteProfileImage from '/src/assets/webSiteProfileImage.png'
+import livewallz1 from '/src/assets/livewallz1.jpg'
+import livewallz2 from '/src/assets/livewallz2.jpg'
+import djangoLogo from '/src/assets/django.png'
+import pythonLogo from '/src/assets/python.png'
+import reactLogo from '/src/assets/react.png'
+import postgresqlLogo from '/src/assets/postgresql.png'
+import nodejsLogo from '/src/assets/nodedotjs.png'
+import dotnetLogo from '/src/assets/dotnet.png'
 import { Mail, Github, FileCode2, Info, FolderOpen, User } from "lucide-react";
 import { Link } from "react-scroll";
 import { Helmet } from 'react-helmet';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
@@ -50,14 +61,20 @@ function App() {
       </header>
 
       {/* Banner */}
-      <section id="banner" className="mt-20">
-        <div className="w-full h-[500px] flex flex-col items-center justify-center animated-gradient">
+      <section id="banner" className="mt-20 relative">
+        <div className="w-full h-[500px] flex flex-col items-center justify-center animated-gradient relative overflow-hidden">
           <h1 className="text-3xl font-bold text-white text-center typing-effect">
             Hi, I’m Cameron Lewis Steensma
           </h1>
           <p className="mt-4 text-base text-white">
             Software Engineer | Building Modern Web Apps & Scalable Systems
           </p>
+
+          <img src={reactLogo} alt="React" className="floating-icon top-10 left-10 w-12 h-12" />
+          <img src={dotnetLogo} alt=".NET" className="floating-icon top-32 right-16 w-14 h-14" />
+          <img src={pythonLogo} alt="Python" className="floating-icon bottom-10 left-20 w-12 h-12" />
+          <img src={postgresqlLogo} alt="PostgreSQL" className="floating-icon bottom-20 right-24 w-14 h-14" />
+          <img src={nodejsLogo} alt="Node.js" className="floating-icon bottom-10 left-1/2 w-12 h-12" />
         </div>
       </section>
 
@@ -103,7 +120,7 @@ function App() {
       <div className="flex justify-center mt-16 mb-16 w-full">
         <div className="gradient-divider"></div>
       </div>
-      
+
       {/* Projects Section */}
       <section id="projects" className="pt-40 pb-28 bg-gray-100">
         <div className="mx-auto px-6 flex flex-col gap-16" style={{ maxWidth: '1100px' }}>
@@ -113,7 +130,7 @@ function App() {
             {/* Project Card */}
             <div className="bg-white rounded-lg shadow p-4 hover-card">
               <div>
-                 <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
                   <FileCode2 className='w-5 h-5 text-blue-500' /> Finance Tracker
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -168,6 +185,7 @@ function App() {
                   Jetpack Compose, and OAuth2.0 authentication.
                 </p>
               </div>
+
               {/* Tech Badges */}
               <div className="mt-6 flex flex-wrap gap-2">
                 <span className="px-3 py-1 text-sm font-medium bg-red-100 text-red-700 rounded-full">C++</span>
@@ -257,7 +275,7 @@ function App() {
       </section>
 
       {/* Footer */}
-       <footer className="py-8 bg-gray-900 text-white text-center">
+      <footer className="py-8 bg-gray-900 text-white text-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} Cameron Steensma. All rights reserved.</p>
       </footer>
     </div>
