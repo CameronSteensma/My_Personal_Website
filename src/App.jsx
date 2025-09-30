@@ -4,6 +4,8 @@ import utesLogo from '/src/assets/utes-logo.png'
 import jazzLogo from '/src/assets/jazz-logo.png'
 import patriotsLogo from '/src/assets/patriots-logo.png'
 import websiteProfileImage from '/src/assets/webSiteProfileImage.png'
+import websiteProfileImage2 from '/src/assets/webSiteProfileImage2.png'
+import websiteProfileImage3 from '/src/assets/webSiteProfileImage3.png'
 import livewallz1 from '/src/assets/livewallz1.jpg'
 import livewallz2 from '/src/assets/livewallz2.jpg'
 import djangoLogo from '/src/assets/django.png'
@@ -12,6 +14,7 @@ import reactLogo from '/src/assets/react.png'
 import postgresqlLogo from '/src/assets/postgresql.png'
 import nodejsLogo from '/src/assets/nodedotjs.png'
 import dotnetLogo from '/src/assets/dotnet.png'
+import { useState, useEffect } from "react";
 import { Mail, Github, FileCode2, Info, FolderOpen, User } from "lucide-react";
 import { Link } from "react-scroll";
 import { Helmet } from 'react-helmet';
@@ -19,8 +22,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 function App() {
+  const profileImages = [websiteProfileImage, websiteProfileImage2, websiteProfileImage3];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % profileImages.length);
+    }, 15000); // switch every 15 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-full flex flex-col">
       <head>
@@ -81,11 +93,16 @@ function App() {
       {/* About Section */}
       <section id="about" className="mt-20 mb-20">
         <div className="flex flex-col items-center gap-6">
-          <img
-            src={websiteProfileImage}
-            alt="Profile"
-            className="w-64 rounded-lg shadow hover-card"
-          />
+          <div className="about-image-container">
+            {profileImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Profile ${index + 1}`}
+                className={`about-image ${index === currentImageIndex ? 'visible' : ''}`}
+              />
+            ))}
+          </div>
           <h2 className="text-lg font-bold flex items-center gap-2">
             <User className="w-6 h-6 text-blue-600" /> About Me
           </h2>
