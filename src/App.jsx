@@ -106,7 +106,7 @@ function App() {
           <h2 className="text-lg font-bold flex items-center gap-2">
             <User className="w-6 h-6 text-blue-600" /> About Me
           </h2>
-          <p className="text-base text-gray-700 max-w-[750px] text-center">
+          <p className=" border-2 p-8 text-base text-gray-700 max-w-[750px] text-center">
             I’m Cameron, a software engineer passionate about building modern web apps,
             data-driven solutions, and scalable systems. I graduated from the University of Utah in 2024
             with my Bachelors of Science in Computer Science along with a track in Software Development.

@@ -272,6 +272,10 @@ nav a:hover span::after {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 /* Margin */
 .mt-6 {
   margin-top: 1.5rem;
